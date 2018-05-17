@@ -20,3 +20,6 @@ echo $_SESSION['email'].'<br>';
 echo $_SESSION['level'].'<br>';
 
 ?>
+
+
+<?php include 'foot.php' ?>
