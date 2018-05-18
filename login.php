@@ -63,10 +63,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 $_SESSION['lastname'] = $lastname; // setting the users last name
                 $_SESSION['email'] = $email; // settig the users email
                 $_SESSION['level'] = $level; // setting the users 'level'
-                if($level > 0){
-                  header('location: home.php');
-                } else{
-                  header('location: waitingapproval.php');
+                if($level == 0){
+                  header('location: ./unapproved/');
+                } elseif($level = 1){
+                  header("location: home.php");
+                } elseif($level = 2){
+                  header("location: home.php");
+                } elseif($level = 3){
+                  header("location: home.php");
+                } elseif($level = 4){
+                  header("location: home.php");
+                } elseif($level = 5){
+                  header("location: ./admin/");
                 }
               } else{
                 // Display an error message if password is not valid
@@ -105,9 +113,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <section id="main">
       <h1 class="h3 mb-3 font-weight-normal text-center"> LMR APP </h1>
       <h2 class="h3 mb-3 font-weight-normal text-center">Please sign in</h2>
-      <div class="container">
+      <!-- <div class="container">
         <div class="row">
-          <div class="col-md-4 col-md-offset-4">
+          <div class="col-md-4 col-md-offset-4"> -->
+          
             <form id="login" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="well">
             <div class="form-group <?php echo (!empty($userid_err)) ? 'has-error' : ''; ?>">
                 <label>userid</label>
@@ -124,9 +133,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             </form>
             <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
-          </div>
+          <!-- </div>
         </div>
-      </div>
+      </div> -->
       <!-- <footer id="footer text-center">
         <p>Copyright MattBehnke, &copy; 2018</p>
       </footer>   -->

@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Navbar Template for Bootstrap</title>
+    <title>Home</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
@@ -26,18 +25,23 @@
 
       <div class="collapse navbar-collapse" id="navbarsExample04">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="home.php">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://nemoquiz.com/timeclock/">Time Clock</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Scouting</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="new-item">
+            <a class="nav-link" href="#">Welcome <?php echo $_SESSION['username']?></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="logout.php">Log Out</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
         </ul>
-        <form class="form-inline my-2 my-md-0">
-          <input class="form-control" type="text" placeholder="Search">
-        </form>
       </div>
     </nav>
