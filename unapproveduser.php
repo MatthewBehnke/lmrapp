@@ -9,6 +9,6 @@
 <body>
   <p>We are curently waiting for an admin to approve you and assign you a team</p>
   <p>Please try later or contact an admin</p>
-  <!-- <a href="./index.php">home page</a> -->
+  <a href="./index.php">home page</a>
 </body>
 </html>

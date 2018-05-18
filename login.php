@@ -64,7 +64,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 $_SESSION['email'] = $email; // settig the users email
                 $_SESSION['level'] = $level; // setting the users 'level'
                 if($level == 0){
-                  header('location: ./unapproved/');
+                  header('location: unapproveduser.php');
                 } elseif($level = 1){
                   header("location: home.php");
                 } elseif($level = 2){
