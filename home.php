@@ -28,7 +28,7 @@ include 'head.php';
   <div class="container">
     <h1 class="display-3">Hello, <?php echo $_SESSION['username'] ?></h1>
     <p>This is the Linn-Mar Robotics App for all things that should not be public </p>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
   </div>
 </div>
 
@@ -36,19 +36,19 @@ include 'head.php';
   <!-- Example row of columns -->
   <div class="row">
     <div class="col-md-4">
-      <h2>Heading</h2>
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-      <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      <h2>Time Clock</h2>
+      <p>The Linn-Mar Robotics timeclock is a tool used by the linnmar robotics teams for time tracking</p>
+      <p><a class="btn btn-secondary" href="./timeclock" role="button">Go to The timeclock</a></p>
     </div>
     <div class="col-md-4">
-      <h2>Heading</h2>
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-      <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      <h2>Scouting Tool</h2>
+      <p>The Linn-Mar Robotics scouting tool is used currently by the iron lions frc team #967 with development towards an ftc version as well. </p>
+      <p><a class="btn btn-secondary" href="./scouting" role="button">Go to The Scouting Tool</a></p>
     </div>
     <div class="col-md-4">
-      <h2>Heading</h2>
-      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      <h2>Managment Tool</h2>
+      <p>The Linn-Mar Robotics managment tool is used to track the users forms and simmilar items</p>
+      <p><a class="btn btn-secondary" href="./managmenttool" role="button">Go To The Managment Tool</a></p>
     </div>
   </div>
 
