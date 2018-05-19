@@ -65,15 +65,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 $_SESSION['level'] = $level; // setting the users 'level'
                 if($level == 0){
                   header('location: unapproveduser.php');
-                } elseif($level = 1){
+                } elseif($level == 1){
                   header("location: home.php");
-                } elseif($level = 2){
+                } elseif($level == 2){
                   header("location: home.php");
-                } elseif($level = 3){
+                } elseif($level == 3){
                   header("location: home.php");
-                } elseif($level = 4){
+                } elseif($level == 4){
                   header("location: home.php");
-                } elseif($level = 5){
+                } elseif($level == 5){
                   header("location: ./admin/");
                 }
               } else{
