@@ -47,9 +47,9 @@ if(!isset($_SESSION['userid']) || empty($_SESSION['userid'])){
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link active" href="../admin/index.php">
+                <a class="nav-link" href="../admin/index.php">
                   <span data-feather="home"></span>
-                  Dashboard <span class="sr-only">(current)</span>
+                  Dashboard
                 </a>
               </li>
               <li class="nav-item">
@@ -59,9 +59,9 @@ if(!isset($_SESSION['userid']) || empty($_SESSION['userid'])){
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../admin/unapprovedusers.php">
+                <a class="nav-link active" href="../admin/unapprovedusers.php">
                   <span data-feather="users"></span>
-                  Unapproved Users 
+                  Unapproved Users <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
