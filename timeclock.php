@@ -13,3 +13,5 @@ include 'head.php';
 
 ?>
 <h1>TimeClock</h1>
+
+<?php include 'foot.php' ?>

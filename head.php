@@ -42,14 +42,14 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo $_SESSION['username']?></a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#settings">Settings</a>
+              <a class="dropdown-item" href="#help">Help</a>
+              <a class="dropdown-item" href="logout.php">LogOut</a>
             </div>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="logout.php">Log Out</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </nav>

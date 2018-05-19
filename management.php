@@ -15,3 +15,5 @@ include 'head.php';
 
 
 <h1>Management Tool</h1>
+
+<?php include 'foot.php' ?>

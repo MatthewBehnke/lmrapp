@@ -14,3 +14,5 @@ include 'head.php';
 ?>
 
 <h1>Scouting Tool</h1>
+
+<?php include 'foot.php' ?>
