@@ -29,15 +29,23 @@
             <a class="nav-link" href="home.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./timeclock">Time Clock</a>
+            <a class="nav-link" href="timeclock.php">Time Clock</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Scouting</a>
+            <a class="nav-link" href="scouting.php">Scouting</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="management.php">Management Tool</a>
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li class="new-item">
-            <a class="nav-link" href="#">Welcome <?php echo $_SESSION['username']?></a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo $_SESSION['username']?></a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="logout.php">Log Out</a>

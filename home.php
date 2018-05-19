@@ -38,17 +38,17 @@ include 'head.php';
     <div class="col-md-4">
       <h2>Time Clock</h2>
       <p>The Linn-Mar Robotics timeclock is a tool used by the linnmar robotics teams for time tracking</p>
-      <p><a class="btn btn-secondary" href="./timeclock" role="button">Go to The timeclock</a></p>
+      <p><a class="btn btn-secondary" href="timeclock.php" role="button">Go to The Timeclock</a></p>
     </div>
     <div class="col-md-4">
       <h2>Scouting Tool</h2>
       <p>The Linn-Mar Robotics scouting tool is used currently by the iron lions frc team #967 with development towards an ftc version as well. </p>
-      <p><a class="btn btn-secondary" href="./scouting" role="button">Go to The Scouting Tool</a></p>
+      <p><a class="btn btn-secondary" href="scouting.php" role="button">Go to The Scouting Tool</a></p>
     </div>
     <div class="col-md-4">
       <h2>Managment Tool</h2>
       <p>The Linn-Mar Robotics managment tool is used to track the users forms and simmilar items</p>
-      <p><a class="btn btn-secondary" href="./managmenttool" role="button">Go To The Managment Tool</a></p>
+      <p><a class="btn btn-secondary" href="management.php" role="button">Go to The Managment Tool</a></p>
     </div>
   </div>
 
