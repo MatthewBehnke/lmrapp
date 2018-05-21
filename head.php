@@ -47,9 +47,6 @@
               <a class="dropdown-item" href="logout.php">LogOut</a>
             </div>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="logout.php">Log Out</a>
-          </li> -->
         </ul>
       </div>
     </nav>

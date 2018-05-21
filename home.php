@@ -14,14 +14,6 @@ if(!isset($_SESSION['userid']) || empty($_SESSION['userid'])){
 
 include 'head.php';
 
-// echo $_SESSION['id'] .'<br>';
-// echo $_SESSION['userid'].'<br>';
-// echo $_SESSION['username'].'<br>';
-// echo $_SESSION['firstname'].'<br>';
-// echo $_SESSION['lastname'].'<br>';
-// echo $_SESSION['email'].'<br>';
-// echo $_SESSION['level'].'<br>';
-
 ?>
 
 <main role="main">
