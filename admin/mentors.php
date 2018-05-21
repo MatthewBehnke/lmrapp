@@ -9,12 +9,12 @@ session_start();
 if(!isset($_SESSION['userid']) || empty($_SESSION['userid'])){
   header("location: index.php");
   exit;
-} elseif($_SESSION['level'] != 5){
+} elseif($_SESSION['level'] != 7){
   header("location: ../index.php");
   exit;
 }
 
-$sql="SELECT * from users WHERE level = 2";
+$sql="SELECT * from users WHERE level = 6";
 $result=mysqli_query($database,$sql);
 $num_users = mysqli_num_rows($result);
 $resultset=array();

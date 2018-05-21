@@ -63,17 +63,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 $_SESSION['lastname'] = $lastname; // setting the users last name
                 $_SESSION['email'] = $email; // settig the users email
                 $_SESSION['level'] = $level; // setting the users 'level'
-                if($level == 0){
+                if($level == 0){ // no team
                   header('location: unapproveduser.php');
-                } elseif($level == 1){
+                } elseif($level == 1){ // just scouting
+                  // header("location: home.php");
+                } elseif($level == 2){ // 4150 dark matter
                   header("location: home.php");
-                } elseif($level == 2){
+                } elseif($level == 3){ // lost in time
                   header("location: home.php");
-                } elseif($level == 3){
+                } elseif($level == 4){ // 10107 
                   header("location: home.php");
-                } elseif($level == 4){
+                } elseif($level == 5){ // 967 iron lions 
                   header("location: home.php");
-                } elseif($level == 5){
+                } elseif($level == 6){ //mentors
+                  header("location: ./admin/");
+                } elseif($level == 7){ // coaches
                   header("location: ./admin/");
                 }
               } else{
