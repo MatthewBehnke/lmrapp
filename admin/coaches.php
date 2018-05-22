@@ -138,10 +138,11 @@ while($row=mysqli_fetch_assoc($result))
               <thead>
                 <tr>
                   <th>#</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
+                  <th>Userid</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                  <th>Edit</th>
                 </tr>
               </thead>
               <tbody>
@@ -161,7 +162,9 @@ while($row=mysqli_fetch_assoc($result))
                         <th>$firstname</th>
                         <th>$lastname</th>
                         <th>$email</th>
-                        </td>
+                        <td><button type='button' class='btn btn-primary' data-toggle='modal' data-target='#exampleModal'>
+                        Edit 
+                      </button></td>
                       </tr>";
                 }
               }
@@ -169,9 +172,30 @@ while($row=mysqli_fetch_assoc($result))
               </tbody>
             </table>
           </div>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </main>
       </div>
     </div>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -188,3 +212,5 @@ while($row=mysqli_fetch_assoc($result))
     </script>
   </body>
 </html>
+
+<?php include '../foot.php'?>

@@ -132,7 +132,7 @@ while($row=mysqli_fetch_assoc($result))
             </div>
           </div>
 
-          <h2>Users Waiting for Approvle</h2>
+          <h2>Users Waiting for Approval</h2>
           <div class="table-responsive">
             <table class="table table-striped table-sm">
               <thead>
@@ -172,7 +172,7 @@ while($row=mysqli_fetch_assoc($result))
               </tbody>
             </table>
           </div>
-\          <!-- Modal -->
+          <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
