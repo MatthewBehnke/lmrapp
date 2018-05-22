@@ -12,6 +12,8 @@ if(!isset($_SESSION['userid']) || empty($_SESSION['userid'])){
     exit;
 }
 
+include 'head.php';
+
 ?>
 
 <h1>Scouting Tool</h1>
