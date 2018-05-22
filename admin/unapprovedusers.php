@@ -142,6 +142,7 @@ while($row=mysqli_fetch_assoc($result))
                   <th>First Name</th>
                   <th>Last Name</th>
                   <th>Email</th>
+                  <th>Edit</th>
                 </tr>
               </thead>
               <tbody>
@@ -161,7 +162,9 @@ while($row=mysqli_fetch_assoc($result))
                         <th>$firstname</th>
                         <th>$lastname</th>
                         <th>$email</th>
-                        </td>
+                        <td><button type='button' class='btn btn-primary' data-toggle='modal' data-target='#exampleModal'>
+                        Edit 
+                      </button></td>
                       </tr>";
                 }
               }
@@ -169,9 +172,30 @@ while($row=mysqli_fetch_assoc($result))
               </tbody>
             </table>
           </div>
+\          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </main>
       </div>
     </div>
+    
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -186,37 +210,7 @@ while($row=mysqli_fetch_assoc($result))
     <script>
       feather.replace()
     </script>
-
-    <!-- Graphs -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-    <script>
-      var ctx = document.getElementById("myChart");
-      var myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          datasets: [{
-            data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
-            lineTension: 0,
-            backgroundColor: 'transparent',
-            borderColor: '#007bff',
-            borderWidth: 4,
-            pointBackgroundColor: '#007bff'
-          }]
-        },
-        options: {
-          scales: {
-            yAxes: [{
-              ticks: {
-                beginAtZero: false
-              }
-            }]
-          },
-          legend: {
-            display: false,
-          }
-        }
-      });
-    </script>
   </body>
 </html>
+
+<?php include '../foot.php'  ?>

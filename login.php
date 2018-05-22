@@ -76,7 +76,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 } elseif($level == 5){ // 967 iron lions 
                   header("location: home.php");
                 } elseif($level == 6){ //mentors
-                  header("location: ./admin/");
+                  header("location: home.php");
                 } elseif($level == 7){ // coaches
                   header("location: ./admin/");
                 }
