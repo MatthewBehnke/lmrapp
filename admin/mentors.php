@@ -162,9 +162,7 @@ while($row=mysqli_fetch_assoc($result))
                         <th>$firstname</th>
                         <th>$lastname</th>
                         <th>$email</th>
-                        <td><button type='button' class='btn btn-primary' data-toggle='modal' data-target='#exampleModal'>
-                        Edit 
-                      </button></td>
+                        <td><a href='edituser.php?id=$id'><button type='button' class='btn btn-primary'>Edit</button></a></td>
                       </tr>";
                 }
               }
