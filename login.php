@@ -78,7 +78,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 } elseif($level == 6){ //mentors
                   header("location: home.php");
                 } elseif($level == 7){ // coaches
-                  header("location: ./admin/");
+                  header("location: ./admin/unapprovedusers.php");
                 }
               } else{
                 // Display an error message if password is not valid

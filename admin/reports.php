@@ -46,12 +46,12 @@ if(!isset($_SESSION['userid']) || empty($_SESSION['userid'])){
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="../admin/index.php">
                   <span data-feather="home"></span>
                   Dashboard
                 </a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="../home.php">
                   <span data-feather="home"></span>
