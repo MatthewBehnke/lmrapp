@@ -43,7 +43,7 @@ while($row=mysqli_fetch_assoc($result))
 
     <link rel="icon" 
       type="image/png" 
-      href="../logo_only.png">
+      href="../img/logo_only.png">
 
   </head>
 
