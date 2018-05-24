@@ -165,7 +165,7 @@ while($row=mysqli_fetch_assoc($result))
                         <th>$lastname</th>
                         <th>$email</th>
                         <td><a href='#edituser.php?id=$id'><button type='button' class='btn btn-primary'>Edit</button></a></td>
-                        <td><a href='#edituser.php?id=$id'><button type='button' class='btn btn-danger'>Delete</button></a></td>
+                        <td><a href='removeuser.php?id=$id'><button type='button' class='btn btn-danger'>Delete</button></a></td>
                       </tr>";
                 }
               }
