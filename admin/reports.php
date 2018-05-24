@@ -28,6 +28,11 @@ if(!isset($_SESSION['userid']) || empty($_SESSION['userid'])){
 
     <!-- Custom styles for this template -->
     <link href="../css/dashboard.css" rel="stylesheet">
+
+    <link rel="icon" 
+      type="image/png" 
+      href="../img/logo_only.png">
+
   </head>
 
   <body>

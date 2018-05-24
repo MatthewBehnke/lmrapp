@@ -41,6 +41,11 @@ while($row=mysqli_fetch_assoc($result))
 
     <!-- Custom styles for this template -->
     <link href="../css/dashboard.css" rel="stylesheet">
+
+    <link rel="icon" 
+      type="image/png" 
+      href="../img/logo_only.png">
+
   </head>
 
   <body>

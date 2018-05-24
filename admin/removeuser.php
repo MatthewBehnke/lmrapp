@@ -21,6 +21,20 @@ if(mysqli_query($database,$_sql)){
   echo "error removing user!";
 }
 
-?>
+?> <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>abandon ship</title>
+  <link rel="icon" 
+      type="image/png" 
+      href="../img/logo_only.png">
+</head>
+<body>
+  
+</body>
+</html>
 
 <a href="./index.php"></a>

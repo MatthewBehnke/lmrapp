@@ -13,6 +13,11 @@
 
     <!-- Custom styles for this template -->
     <link href="navbar.css" rel="stylesheet">
+
+    <link rel="icon" 
+      type="image/png" 
+      href="../img/logo_only.png">
+
   </head>
 
   <body>
