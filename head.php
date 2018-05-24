@@ -48,7 +48,7 @@
             <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo $_SESSION['username']?></a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <a class="dropdown-item" href="#settings">Settings</a>
-              <a class="dropdown-item" href="#help">Help</a>
+              <a class="dropdown-item" href="help.php">Help</a>
               <a class="dropdown-item" href="logout.php">LogOut</a>
             </div>
           </li>
