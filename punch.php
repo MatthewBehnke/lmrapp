@@ -35,7 +35,7 @@ function hours($databse, $user){
 		$minutes = mysqli_fetch_row($minute_array);
 		$hours = round($minutes[0] / 60.0,2);	
 		echo "<p class='text-center pagination-centered'>You have logged $hours hours.</p>";
-		$sql = "INSERT INTO hours (id, hours, date, place) VALUES ($user, $hours,ADDTIME(NOW(), '1:00:00'), $_GET[place])";
+		$sql = "INSERT INTO hours (id, hours, date, place) VALUES ($user, $hours,ADDTIME(NOW(), '1:00:00'), '{$_GET['place']}')";
 		if (mysqli_query($databse,$sql)) {}
 		//echo "<p>Time has been logged in the database.</p>";	
 		else echo mysqli_error($databse);
