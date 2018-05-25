@@ -1,6 +1,6 @@
 <?php
 
-require_once '../database.php';
+require_once '../../database.php';
 
 session_start();
 
@@ -14,7 +14,7 @@ if(!isset($_SESSION['userid']) || empty($_SESSION['userid'])){
   exit;
 }
 
-$sql="SELECT * from users WHERE level = 2 OR level =3 OR level = 4 OR level =5";
+$sql="SELECT * from users WHERE punched_in = 1";
 $result=mysqli_query($database,$sql);
 $num_users = mysqli_num_rows($result);
 $resultset=array();
@@ -39,7 +39,7 @@ while($row=mysqli_fetch_assoc($result))
 
 
     <!-- Custom styles for this template -->
-    <link href="../css/dashboard.css" rel="stylesheet">
+    <link href="../../css/dashboard.css" rel="stylesheet">
 
     <link rel="icon" 
       type="image/png" 
@@ -53,7 +53,7 @@ while($row=mysqli_fetch_assoc($result))
       <!--<input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search"> -->
       <ul class="navbar-nav px-3"> 
         <li class="nav-item text-nowrap">
-          <a class="nav-link" href="../logout.php">Log Out</a>
+          <a class="nav-link" href="../../logout.php">Log Out</a>
         </li>
       </ul>
     </nav>
@@ -63,44 +63,38 @@ while($row=mysqli_fetch_assoc($result))
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="../admin/index.php">
-                  <span data-feather="home"></span>
-                  Dashboard
-                </a>
-              </li> -->
               <li class="nav-item">
-                <a class="nav-link" href="../home.php">
+                <a class="nav-link" href="../../home.php">
                   <span data-feather="home"></span>
                   Student Side
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../admin/unapprovedusers.php">
+                <a class="nav-link" href="../../admin/unapprovedusers.php">
                   <span data-feather="users"></span>
                   Unapproved Users 
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="../admin/students.php">
+                <a class="nav-link" href="../../admin/students.php">
                   <span data-feather="users"></span>
-                  Students <span class="sr-only">(current)</span>
+                  Students
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../admin/mentors.php">
+                <a class="nav-link" href="../../admin/mentors.php">
                   <span data-feather="users"></span>
                   Mentors
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../admin/coaches.php">
+                <a class="nav-link" href="../../admin/coaches.php">
                   <span data-feather="users"></span>
                   Coaches
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../admin/reports.php">
+                <a class="nav-link" href="../../admin/reports.php">
                   <span data-feather="bar-chart-2"></span>
                   Reports
                 </a>
@@ -115,7 +109,7 @@ while($row=mysqli_fetch_assoc($result))
             </h6>
             <ul class="nav flex-column mb-2">
               <li class="nav-item">
-                <a class="nav-link" href="../admin/reports/loggedin.php">
+                <a class="nav-link" href="../../admin/reports/loggedin.php">
                   <span data-feather="file-text"></span>
                   Students logged In
                 </a>
@@ -137,7 +131,7 @@ while($row=mysqli_fetch_assoc($result))
             </div>
           </div>
 
-          <h2 class = "text-center">Students</h2>
+          <h2 class = "text-center">Students logged in</h2>
           <div class="table-responsive">
             <table class="table table-striped table-sm">
               <thead>
@@ -147,7 +141,6 @@ while($row=mysqli_fetch_assoc($result))
                   <th>First Name</th>
                   <th>Last Name</th>
                   <th>Email</th>
-                  <th>Edit</th>
                 </tr>
               </thead>
               <tbody>
@@ -167,9 +160,8 @@ while($row=mysqli_fetch_assoc($result))
                         <th>$firstname</th>
                         <th>$lastname</th>
                         <th>$email</th>
-                        <td><a href='#edituser.php?id=$id'><button type='button' class='btn btn-primary'>Edit</button></a></td>
-                      </tr>";
-                }
+                        ";
+                }   
               }
                 ?>
               </tbody>
@@ -196,4 +188,4 @@ while($row=mysqli_fetch_assoc($result))
   </body>
 </html>
 
-<?php include '../foot.php'?>
+<?php include '../../foot.php'?>
