@@ -14,15 +14,6 @@ if(!isset($_SESSION['userid']) || empty($_SESSION['userid'])){
   exit;
 }
 
-$sql="SELECT * from users WHERE punched_in = 1";
-$result=mysqli_query($database,$sql);
-$num_users = mysqli_num_rows($result);
-$resultset=array();
-// Associative array
-while($row=mysqli_fetch_assoc($result))
-{
-  $resultset[]=$row;
-}
 
 ?>
 
@@ -145,7 +136,16 @@ while($row=mysqli_fetch_assoc($result))
               </thead>
               <tbody>
               <?php
-              // echo $num_users;s
+
+              $sql="SELECT * from users WHERE punched_in = 1";
+              $result=mysqli_query($database,$sql);
+              $num_users = mysqli_num_rows($result);
+              $resultset=array();
+              // Associative array
+              while($row=mysqli_fetch_assoc($result))
+              {
+                $resultset[]=$row;
+              }
               if(!empty($num_users)){
                 for($i = 0; $i < $num_users; $i++){
                   $num = $num_users - $i -1;
