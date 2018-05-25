@@ -123,6 +123,7 @@ if(!isset($_SESSION['userid']) || empty($_SESSION['userid'])){
           </div>
 
           <h2 class = "text-center">Students logged in</h2>
+          <h3>4150</h3>
           <div class="table-responsive">
             <table class="table table-striped table-sm">
               <thead>
@@ -137,7 +138,7 @@ if(!isset($_SESSION['userid']) || empty($_SESSION['userid'])){
               <tbody>
               <?php
 
-              $sql="SELECT * from users WHERE punched_in = 1";
+              $sql="SELECT * from users WHERE punched_in = 1 AND level = 2";
               $result=mysqli_query($database,$sql);
               $num_users = mysqli_num_rows($result);
               $resultset=array();
@@ -166,6 +167,144 @@ if(!isset($_SESSION['userid']) || empty($_SESSION['userid'])){
                 ?>
               </tbody>
             </table>
+
+            <h3>4324</h3>
+          <div class="table-responsive">
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Userid</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+              <?php
+
+              $sql="SELECT * from users WHERE punched_in = 1 AND level = 3";
+              $result=mysqli_query($database,$sql);
+              $num_users = mysqli_num_rows($result);
+              $resultset=array();
+              // Associative array
+              while($row=mysqli_fetch_assoc($result))
+              {
+                $resultset[]=$row;
+              }
+              if(!empty($num_users)){
+                for($i = 0; $i < $num_users; $i++){
+                  $num = $num_users - $i -1;
+                  $id = $resultset[$num]['ID'];
+                  $userid = $resultset[$num]['userid'];
+                  $firstname = $resultset[$num]['firstname'];
+                  $lastname = $resultset[$num]['lastname'];
+                  $email = $resultset[$num]['email'];
+                  echo "<tr>
+                        <th>$id</th>
+                        <th>$userid</th>
+                        <th>$firstname</th>
+                        <th>$lastname</th>
+                        <th>$email</th>
+                        ";
+                }   
+              }
+                ?>
+              </tbody>
+            </table>
+
+            <h3>10107</h3>
+            <div class="table-responsive">
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Userid</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+              <?php
+
+              $sql="SELECT * from users WHERE punched_in = 1 AND level = 3";
+              $result=mysqli_query($database,$sql);
+              $num_users = mysqli_num_rows($result);
+              $resultset=array();
+              // Associative array
+              while($row=mysqli_fetch_assoc($result))
+              {
+                $resultset[]=$row;
+              }
+              if(!empty($num_users)){
+                for($i = 0; $i < $num_users; $i++){
+                  $num = $num_users - $i -1;
+                  $id = $resultset[$num]['ID'];
+                  $userid = $resultset[$num]['userid'];
+                  $firstname = $resultset[$num]['firstname'];
+                  $lastname = $resultset[$num]['lastname'];
+                  $email = $resultset[$num]['email'];
+                  echo "<tr>
+                        <th>$id</th>
+                        <th>$userid</th>
+                        <th>$firstname</th>
+                        <th>$lastname</th>
+                        <th>$email</th>
+                        ";
+                }   
+              }
+                ?>
+              </tbody>
+            </table> 
+
+              <h3>967</h3>
+            <div class="table-responsive">
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Userid</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+              <?php
+
+              $sql="SELECT * from users WHERE punched_in = 1 AND level = 4";
+              $result=mysqli_query($database,$sql);
+              $num_users = mysqli_num_rows($result);
+              $resultset=array();
+              // Associative array
+              while($row=mysqli_fetch_assoc($result))
+              {
+                $resultset[]=$row;
+              }
+              if(!empty($num_users)){
+                for($i = 0; $i < $num_users; $i++){
+                  $num = $num_users - $i -1;
+                  $id = $resultset[$num]['ID'];
+                  $userid = $resultset[$num]['userid'];
+                  $firstname = $resultset[$num]['firstname'];
+                  $lastname = $resultset[$num]['lastname'];
+                  $email = $resultset[$num]['email'];
+                  echo "<tr>
+                        <th>$id</th>
+                        <th>$userid</th>
+                        <th>$firstname</th>
+                        <th>$lastname</th>
+                        <th>$email</th>
+                        ";
+                }   
+              }
+                ?>
+              </tbody>
+            </table>
+
+
+
           </div>
         </main>
       </div>
