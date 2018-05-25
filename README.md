@@ -1,1 +1,1 @@
-# lmrapp
+This application is used as a place to securely hold all of the Linn-Mar Robotics various teams' information. It allows for members of the robotics teams to record the amount of time that they put into the various developmental areas of creating robots. There are tools for use at robotics competitions such as the Scouting tool, which is used to accurately predict what teams are a greater threat in the competition.
