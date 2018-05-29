@@ -53,7 +53,7 @@ while($row=mysqli_fetch_assoc($result))
       <!--<input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search"> -->
       <ul class="navbar-nav px-3"> 
         <li class="nav-item text-nowrap">
-          <a class="nav-link" href="../admin/logout.php">Log Out</a>
+          <a class="nav-link" href="../logout.php">Log Out</a>
         </li>
       </ul>
     </nav>
@@ -100,7 +100,7 @@ while($row=mysqli_fetch_assoc($result))
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../admin/reports.php">
+                <a class="nav-link" href="../admin/reports/">
                   <span data-feather="bar-chart-2"></span>
                   Reports
                 </a>

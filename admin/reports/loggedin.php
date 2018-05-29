@@ -85,7 +85,7 @@ if(!isset($_SESSION['userid']) || empty($_SESSION['userid'])){
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../../admin/reports.php">
+                <a class="nav-link" href="../../admin/reports/">
                   <span data-feather="bar-chart-2"></span>
                   Reports
                 </a>
@@ -302,9 +302,6 @@ if(!isset($_SESSION['userid']) || empty($_SESSION['userid'])){
                 ?>
               </tbody>
             </table>
-
-
-
           </div>
         </main>
       </div>

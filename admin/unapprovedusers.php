@@ -101,7 +101,7 @@ while($row=mysqli_fetch_assoc($result))
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../admin/reports.php">
+                <a class="nav-link" href="../admin/reports/">
                   <span data-feather="bar-chart-2"></span>
                   Reports
                 </a>
@@ -181,8 +181,7 @@ while($row=mysqli_fetch_assoc($result))
         </main>
       </div>
     </div>
-
-    <!-- Bootstrap core JavaScript
+     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
