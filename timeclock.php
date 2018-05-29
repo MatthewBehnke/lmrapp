@@ -25,17 +25,17 @@ include 'head.php';
     <div class="col-md-4">
       <h2>Sign in for Shop</h2>
       <p>Used for tracking hours in the shop.</p>
-      <p><a class="btn btn-secondary" href="punch.php?place=shop" role="button">Sign in</a></p>
+      <p><a class="btn btn-secondary" href="punch.php?place=shop" role="button">Sign in/out</a></p>
     </div>
     <div class="col-md-4">
       <h2>Sign in for Outreach</h2>
       <p>Used for tracking Outreach hours.</p>
-      <p><a class="btn btn-secondary" href="punch.php?place=outreach" role="button">Sign in</a></p>
+      <p><a class="btn btn-secondary" href="punch.php?place=outreach" role="button">Sign in/out</a></p>
     </div>
     <div class="col-md-4">
       <h2>Sign in for Home</h2>
       <p>Used for tracking hours at home.</p>
-      <p><a class="btn btn-secondary" href="punch.php?place=home" role="button">Sign in</a></p>
+      <p><a class="btn btn-secondary" href="punch.php?place=home" role="button">Sign in/out</a></p>
     </div>
   </div>
 
