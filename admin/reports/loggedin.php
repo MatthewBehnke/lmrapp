@@ -309,4 +309,4 @@ if(!isset($_SESSION['userid']) || empty($_SESSION['userid'])){
   </body>
 </html>
 
-<?php include '../../foot.php'?>
+<?php include '../../../foot.php'?>
